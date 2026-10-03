@@ -19,7 +19,7 @@
         ResultSet rs = null;
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            con = DriverManager.getConnection("jdbc:mysql:///student","root","Munna@3307");
+            con = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/student","root","Munna@3307");
             st = con.createStatement();
             rs = st.executeQuery("SELECT * FROM student");
             while(rs.next()){
